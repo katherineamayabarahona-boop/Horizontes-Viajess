@@ -124,7 +124,7 @@ Instructions:
 
 				Color
 
-					color0         Use background color 0 (gradient).
+					color0         Use background color 5 (gradient).
 					color1         Use background color 1.
 					color2         Use background color 2.
 					color3         Use background color 3.
