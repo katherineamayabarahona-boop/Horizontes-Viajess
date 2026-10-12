@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%230f5c55'/%3E%3Cpath d='M12 28A12 12 0 0 1 36 28Z' fill='%23d08a2e'/%3E%3Cpath d='M8 33q4-4 8 0t8 0 8 0 8 0M8 40q4-4 8 0t8 0 8 0 8 0' fill='none' stroke='%23f7f6f2' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>document.documentElement.className="js"</script>
+<title>Horizontes Viajes | Agencia de Turismo en Honduras</title>
+<meta name="description" content="Horizontes Viajes: paquetes a Roatán, Copán, Lago de Yojoa, PANACAM y cruceros. Cotiza tu viaje en lempiras.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{--ink:#11202b;--teal:#0f5c55;--teal2:#0b4540;--ivory:#f7f6f2;--card:#fff;--amb:#d08a2e;--mut:#5b6b75;--line:#e2e0d8}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{font-family:'Figtree',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65}
+h1,h2,h3{font-family:'Fraunces',serif;line-height:1.15}
+a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}
+.w{max-width:1120px;margin:0 auto;padding:0 1.4rem}
+section{padding:4.5rem 0}
+h2{font-size:clamp(1.8rem,3.5vw,2.5rem);margin-bottom:.6rem}
+.sub{color:var(--mut);max-width:42rem;margin-bottom:2.2rem}
+.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:700;padding:.85em 1.6em;border-radius:.5em;background:var(--amb);color:#1d1203;transition:filter .2s}
+.btn:hover{filter:brightness(1.08)}.btn.o{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+.btn.d{background:var(--teal);color:#fff}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(247,246,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:4rem}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;color:var(--teal)}
+nav a{margin-left:1.6rem;font-weight:600;font-size:.95rem;color:var(--ink)}nav a:hover{color:var(--teal)}
+nav .btn{padding:.5em 1.1em;color:#1d1203;margin-left:1.6rem}
+@media(max-width:760px){nav a:not(.btn){display:none}}
+/* hero */
+.hero{padding:8rem 0 4rem;background:var(--teal2);color:#fff}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:1rem}
+.hero p{color:#cfe3df;max-width:34rem;margin-bottom:1.8rem}
+.hero .img{height:26rem;border-radius:.8rem;overflow:hidden;box-shadow:0 1.5rem 3rem rgba(0,0,0,.35)}
+.hero .btn+.btn{margin-left:.6rem}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}.hero .img{height:16rem}}
+.stats{background:var(--ink);color:#fff;padding:1.6rem 0}
+.stats .w{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stats b{display:block;font-family:'Fraunces',serif;font-size:1.6rem;color:var(--amb)}.stats span{font-size:.9rem;color:#b8c4cb}
+@media(max-width:640px){.stats .w{grid-template-columns:repeat(2,1fr)}}
+/* cards */
+.grid{display:grid;gap:1.4rem}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.g3,.g4,.g2{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:1.5rem}
+.box h3{font-size:1.15rem;margin-bottom:.4rem}.box p{color:var(--mut);font-size:.95rem}
+.ico{width:4.5rem;height:4.5rem;border-radius:.7rem;overflow:hidden;background:#e3efec;margin-bottom:1rem;box-shadow:0 .2rem .6rem rgba(17,32,43,.15)}
+.dest{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.dest .ph{height:11rem}.dest .in{padding:1.3rem;display:flex;flex-direction:column;flex:1}
+.dest ul{list-style:none;padding:0;margin:.6rem 0 1rem;font-size:.92rem;color:var(--mut)}.dest li{padding:.15rem 0 .15rem 1.2rem;position:relative}
+.dest li:before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+.meta{font-size:.82rem;color:var(--mut);margin-bottom:.6rem}
+.pie{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:.6rem;border-top:1px solid var(--line);padding-top:1rem}
+.pie b{font-size:1.15rem;color:var(--teal)}.pie small{display:block;color:var(--mut);font-size:.75rem}
+.pie .btn{padding:.55em 1.1em;font-size:.9rem}
+.alt{background:#fff;border-block:1px solid var(--line)}
+.paso{display:flex;gap:1rem}.paso i{flex:none;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700}
+details{background:#fff;border:1px solid var(--line);border-radius:.6rem;padding:1rem 1.3rem;margin-bottom:.7rem}
+summary{cursor:pointer;font-weight:700}details p{color:var(--mut);margin-top:.6rem;font-size:.95rem}
+/* form */
+.cot{background:var(--teal2);color:#fff}
+.cot .sub{color:#cfe3df}
+.cot .w>.grid{grid-template-columns:1.4fr 1fr;align-items:start}@media(max-width:900px){.cot .w>.grid{grid-template-columns:1fr}}
+form{background:#fff;color:var(--ink);border-radius:.8rem;padding:1.8rem}
+.f{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.f .s{grid-column:1/-1}.f .t{grid-column:span 1}
+@media(max-width:600px){.f{grid-template-columns:1fr}}
+label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.25rem}
+input,select,textarea{width:100%;font:inherit;padding:.65em .8em;border:1px solid #cfccc2;border-radius:.45em;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);outline-offset:1px}
+.bad{border-color:#c0392b!important}
+.chk{display:flex;gap:.6rem;align-items:center}.chk input{width:auto}.chk label{margin:0;font-weight:500}
+.res{position:sticky;top:5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);border-radius:.8rem;padding:1.5rem}
+.res h3{margin-bottom:.8rem}.res .r{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:.95rem}
+.res .tot{font-size:1.4rem;font-weight:700;color:var(--amb);border:0;padding-top:.8rem}.res small{display:block;margin-top:.8rem;color:#b9d2cd;font-size:.8rem}
+.acc{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
+/* footer */
+footer{background:var(--ink);color:#b8c4cb;padding:3rem 0 1.5rem;font-size:.92rem}
+footer .grid{grid-template-columns:2fr 1fr 1fr 1fr;margin-bottom:2rem}@media(max-width:760px){footer .grid{grid-template-columns:1fr 1fr}}
+footer h4{color:#fff;margin-bottom:.6rem}footer a{display:block;padding:.15rem 0}footer a:hover{color:#fff}
+.cp{border-top:1px solid #2a3b47;padding-top:1.2rem;font-size:.82rem}
+/* flotantes */
+.fl{position:fixed;right:1.1rem;z-index:60;width:3.2rem;height:3.2rem;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;font-size:1.3rem;box-shadow:0 .3rem 1rem rgba(0,0,0,.3);color:#fff}
+#wa{bottom:1.1rem;background:#25d366}#mus{bottom:5rem;background:var(--ink);color:var(--amb)}#mus.off{color:#8a99a3}
+#mus span{position:absolute;right:3.8rem;background:var(--ink);color:#fff;font-size:.75rem;padding:.3em .7em;border-radius:.4em;white-space:nowrap;opacity:0;transition:opacity .2s;pointer-events:none}#mus:hover span{opacity:1}
+.toast{position:fixed;left:50%;bottom:1.5rem;transform:translate(-50%,2rem);padding:.9rem 1.4rem;border-radius:.5em;color:#fff;font-weight:600;opacity:0;pointer-events:none;transition:.3s;z-index:99;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}.toast.ok{background:#1f7a55}.toast.err{background:#b03a2e}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* logo */
+.logo{display:flex;align-items:center;gap:.55rem}.lg{width:2.3rem;height:2.3rem;flex:none;transition:transform .4s}.logo:hover .lg{transform:rotate(-8deg) scale(1.08)}
+.lg .ola{animation:ola 3.2s ease-in-out infinite alternate}@keyframes ola{to{transform:translateX(-3px)}}
+.lg .sol{transform-origin:24px 28px;animation:sol 4s ease-in-out infinite alternate}@keyframes sol{to{transform:scale(1.12)}}
+.logo small{display:block;font-family:'Figtree',sans-serif;font-weight:600;font-size:.62rem;letter-spacing:.14em;color:var(--mut);line-height:1;margin-top:.2rem;text-transform:uppercase}
+.logo span{display:block;line-height:1}
+footer .logo{color:#fff;margin-bottom:.8rem}footer .logo small{color:#8fa0aa}
+/* títulos dinámicos */
+.hero h1{animation:subir .9s .1s both}.hero p{animation:subir .9s .35s both}.hero .btn{animation:subir .9s .6s both}.hero .img{animation:subir 1s .3s both}
+@keyframes subir{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.rot{display:inline-block;color:var(--amb);transition:opacity .4s,transform .4s}.rot.out{opacity:0;transform:translateY(-.35em)}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.js .rv.in{opacity:1;transform:none}
+h2:after{content:"";display:block;width:0;height:3px;border-radius:3px;background:var(--amb);margin-top:.55rem;transition:width .9s .35s}
+h2.in:after{width:3.6rem}
+.box{transition:transform .25s,box-shadow .25s}.box.in:hover{transform:translateY(-5px);box-shadow:0 .8rem 1.6rem rgba(17,32,43,.12)}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1!important;transform:none!important}h2:after{width:3.6rem}.lg *{animation:none!important}}
+
+/* ventana de información */
+.dest{cursor:pointer}.dest:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.dest .ver{font-size:.85rem;font-weight:700;color:var(--teal);margin:-.3rem 0 1rem}
+dialog.mod{border:0;border-radius:1rem;padding:0;width:min(720px,94vw);max-height:90vh;overflow:auto;background:var(--card);color:var(--ink);box-shadow:0 2rem 4rem rgba(0,0,0,.4);animation:subir .35s both}
+dialog.mod::backdrop{background:rgba(11,20,27,.65);backdrop-filter:blur(3px)}
+.mod .top{height:15rem;position:relative}
+.mod .x{position:absolute;top:.8rem;right:.8rem;width:2.4rem;height:2.4rem;border-radius:50%;border:0;cursor:pointer;background:rgba(17,32,43,.75);color:#fff;font-size:1rem}
+.mod .bd{padding:1.6rem}.mod h2{margin-bottom:.3rem}.mod h2:after{width:3.6rem}
+.mod h3{font-size:1.1rem;margin:1.3rem 0 .7rem}
+.mod .acts{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.mod .act{background:var(--ivory);border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem}
+.mod .act b{display:block;font-size:.95rem;color:var(--teal)}.mod .act span{font-size:.88rem;color:var(--mut)}
+.mod .inc{list-style:none;padding:0;font-size:.92rem;color:var(--mut)}
+.mod .inc li{padding:.15rem 0 .15rem 1.2rem;position:relative}.mod .inc li:before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+.mod .tip{margin-top:1.2rem;background:#fbf1e0;border-left:4px solid var(--amb);border-radius:.4rem;padding:.8rem 1rem;font-size:.92rem}
+.mod .pie{margin-top:1.4rem}.mod .nota{font-size:.78rem;color:var(--mut);margin-top:.9rem}
+@media(max-width:600px){.mod .acts{grid-template-columns:1fr}.mod .top{height:11rem}}
+.pkb:nth-child(-n+3){grid-column:span 2}.pkb:nth-child(n+4){grid-column:span 3}
+.pks{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:.2rem 0 1rem}
+.pkb{font:inherit;cursor:pointer;background:var(--ivory);border:1px solid var(--line);border-radius:.5rem;padding:.5rem .2rem;text-align:center;color:var(--ink);transition:border-color .2s,background .2s}
+.pkb:hover{border-color:var(--teal);background:#e3efec}
+.pkb small{display:block;font-size:.72rem;color:var(--mut)}.pkb b{display:block;font-size:.95rem;color:var(--teal)}
+.tr{font-size:.82rem;color:var(--mut);margin-bottom:.6rem}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#0f5c55"/><path class="sol" d="M12 28A12 12 0 0 1 36 28Z" fill="#d08a2e"/><g class="ola" fill="none" stroke="#f7f6f2" stroke-width="2.5" stroke-linecap="round"><path d="M6 33q4-4 8 0t8 0 8 0 8 0 8 0"/><path stroke-opacity=".6" d="M6 40q4-4 8 0t8 0 8 0 8 0 8 0"/></g></symbol></svg>
+<header><div class="w"><a class="logo" href="#top" aria-label="Horizontes Viajes, inicio"><svg class="lg"><use href="#lg"/></svg><div><span>Horizontes</span><small>Viajes</small></div></a>
+<nav><a href="#destinos">Destinos</a><a href="#servicios">Servicios</a><a href="#proceso">Cómo reservar</a><a href="#faq">Preguntas</a><a class="btn" href="#cotiza">Cotizar</a></nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+<div><h1>Viajes bien organizados, <span class="rot" id="rot">a tu medida</span></h1>
+<p>Somos una agencia de turismo con más de 10 años acompañando a viajeros y familias por Honduras y el Caribe. Nos encargamos de hoteles, traslados, tours y guías para que tú solo disfrutes.</p>
+<a class="btn" href="#cotiza">Cotiza tu viaje</a><a class="btn o" href="#destinos">Ver destinos</a></div>
+<div class="img"><img src="playasd.jpg" alt="Playa al atardecer"></div>
+</div></div>
+<div class="stats"><div class="w"><div><b>10+</b><span>años de experiencia</span></div><div><b>5</b><span>destinos y paquetes</span></div><div><b>24 h</b><span>atención durante tu viaje</span></div><div><b>L</b><span>precios claros en lempiras</span></div></div></div>
+
+<section id="destinos"><div class="w">
+<h2>Destinos y paquetes</h2>
+<p class="sub">Elige un paquete personal, en pareja, familiar o de grupo (6 u 8 personas) y cotízalo al instante.</p>
+<div class="grid g3" id="dest"></div>
+</div></section>
+
+<section id="servicios" class="alt"><div class="w">
+<h2>Todo lo que incluye tu viaje</h2>
+<p class="sub">Un solo equipo para coordinar cada detalle, antes y durante el viaje.</p>
+<div class="grid g3">
+<div class="box"><div class="ico"><img src="palmerola.jpg" alt="Vuelos" loading="lazy"></div><h3>Vuelos y traslados</h3><p>Coordinamos boletos aéreos, ferry y transporte terrestre seguro desde y hacia tu hotel.</p></div>
+<div class="box"><div class="ico"><img src="roatan.avif" alt="Hoteles" loading="lazy"></div><h3>Hoteles y cabañas</h3><p>Hospedaje seleccionado según tu presupuesto y el tipo de experiencia que buscas.</p></div>
+<div class="box"><div class="ico"><img src="panacam.jpg" alt="Tours" loading="lazy"></div><h3>Tours con guía local</h3><p>Recorridos guiados por personas de la zona: ruinas, senderos, snorkel y avistamiento de aves.</p></div>
+<div class="box"><div class="ico"><img src="velero.webp" alt="Cruceros" loading="lazy"></div><h3>Cruceros</h3><p>Cabina, comidas y excursiones en puertos del Caribe, con embarque y vuelos coordinados.</p></div>
+<div class="box"><div class="ico"><img src="ciudad.jpg" alt="Visas" loading="lazy"></div><h3>Asesoría de visas</h3><p>Te orientamos con requisitos y documentos para viajes internacionales.</p></div>
+<div class="box"><div class="ico"><img src="camping.webp" alt="Seguro de viaje" loading="lazy"></div><h3>Seguro de viaje</h3><p>Opcional, por L 320 por persona, para viajar con tranquilidad.</p></div>
+</div></div></section>
+
+<section><div class="w">
+<h2>Por qué viajar con nosotros</h2>
+<p class="sub">Menos improvisación, más tiempo para disfrutar.</p>
+<div class="grid g4">
+<div class="box"><h3>Itinerarios a medida</h3><p>Ajustamos fechas, noches y actividades a tu grupo.</p></div>
+<div class="box"><h3>Precios sin sorpresas</h3><p>Cotización clara y confirmada contigo antes de cobrar.</p></div>
+<div class="box"><h3>Paquetes para todos</h3><p>Personal, pareja, familiar (4) y grupos de 6 u 8 personas.</p></div>
+<div class="box"><h3>Familias sin complicarse</h3><p>El paquete familiar cubre a 4 personas, sean adultos o niños.</p></div>
+</div></div></section>
+
+<section id="proceso" class="alt"><div class="w">
+<h2>Cómo reservar</h2>
+<p class="sub">Cuatro pasos simples, sin trámites complicados.</p>
+<div class="grid g4">
+<div class="paso"><i>1</i><div><h3>Elige</h3><p>Escoge destino, fechas y número de viajeros.</p></div></div>
+<div class="paso"><i>2</i><div><h3>Cotiza</h3><p>Ves el costo estimado al instante.</p></div></div>
+<div class="paso"><i>3</i><div><h3>Confirma</h3><p>Te contactamos por WhatsApp o correo para afinar detalles.</p></div></div>
+<div class="paso"><i>4</i><div><h3>Viaja</h3><p>Te acompañamos las 24 horas durante el viaje.</p></div></div>
+</div></div></section>
+
+<section id="cotiza" class="cot"><div class="w">
+<h2>Cotiza y reserva tu viaje</h2>
+<p class="sub">Calculamos el costo al instante y enviamos tu solicitud directo a nuestro equipo.</p>
+<div class="grid">
+<form id="cotizador" novalidate>
+<div class="f">
+<div><label for="name">Nombre completo *</label><input id="name" autocomplete="name" placeholder="Ej. Juan Pérez"></div>
+<div><label for="tel">Teléfono / WhatsApp *</label><input id="tel" inputmode="tel" autocomplete="tel"></div>
+<div class="s"><label for="email">Correo</label><input type="email" id="email" autocomplete="email"></div>
+<div class="s"><label for="destino">Destino *</label><select id="destino"><option value="" data-price="0">Selecciona un destino</option></select></div>
+<div class="s"><label for="tipo">Tipo de paquete *</label><select id="tipo"><option value="personal">Personal (1 persona)</option><option value="pareja" selected>Pareja (2 personas)</option><option value="familiar">Familiar (4 personas, adultos o niños)</option><option value="grupo6">Grupo de 6 personas</option><option value="grupo8">Grupo de 8 personas</option></select></div>
+<div><label for="fecha">Fecha de salida *</label><input type="date" id="fecha"></div>
+<div><label for="regreso">Fecha de regreso *</label><input type="date" id="regreso"></div>
+<div><label for="adultos">Adultos *</label><input type="number" id="adultos" min="1" max="30" value="2"></div>
+<div><label for="ninos">Niños (2–11 años)</label><input type="number" id="ninos" min="0" max="30" value="0"></div>
+<div><label for="bebes">Bebés (0–1 año)</label><input type="number" id="bebes" min="0" max="10" value="0"></div>
+<div class="chk"><input type="checkbox" id="seguro"><label for="seguro">Seguro de viaje (+L 320 p/p)</label></div>
+<div class="s"><label for="message">Comentarios</label><textarea id="message" rows="3" placeholder="Preferencias, alergias, presupuesto, celebraciones..."></textarea></div>
+</div>
+<p id="aviso" role="alert" style="min-height:1.3em;margin-top:.8rem;color:#c0392b;font-weight:600"></p>
+<div class="acc"><button type="submit" class="btn">Enviar por WhatsApp</button><button type="button" id="btn-mail" class="btn d">Enviar por correo</button></div>
+</form>
+<aside class="res" aria-live="polite">
+<h3>Tu cotización estimada</h3><p id="estancia" style="font-size:.85rem;color:#b9d2cd;margin-bottom:.6rem"></p>
+<div id="lineas"><p style="font-size:.9rem;color:#b9d2cd">Elige un destino para ver el precio.</p></div>
+<div class="r tot"><span>Total estimado</span><span id="total">—</span></div>
+<small>Precios en lempiras, referenciales. Personal (1), Pareja (2), Familiar (4), Grupo de 6 o de 8 (adultos o niños). Bebés de 0 a 1 año gratis. Sujeto a disponibilidad y tipo de cambio.</small>
+</aside>
+</div></div></section>
+
+<section id="faq"><div class="w" style="max-width:780px">
+<h2>Preguntas frecuentes</h2><p class="sub">Lo que más nos preguntan antes de reservar.</p>
+<details><summary>¿Qué incluye el precio?</summary><p>Cada paquete indica su contenido: hospedaje, el transporte señalado (avión o terrestre), traslados y actividades. Los extras se cotizan aparte.</p></details>
+<details><summary>¿Cómo se paga?</summary><p>Te confirmamos el total y las formas de pago antes de cobrar cualquier monto. Los precios están en lempiras.</p></details>
+<details><summary>¿Puedo cambiar las fechas o las noches?</summary><p>Sí. Indícalo en la cotización y ajustamos el precio al confirmar disponibilidad.</p></details>
+<details><summary>¿Cuándo es la mejor época para viajar?</summary><p>Depende del destino: Copán, PANACAM y Yojoa son mejores de noviembre a abril; Roatán de febrero a mayo; los cruceros de diciembre a abril.</p></details>
+<details><summary>¿Cómo funcionan los paquetes?</summary><p>El paquete Personal es para 1 persona, el de Pareja para 2, el Familiar para 4 y los de Grupo para 6 u 8, sean adultos o niños. Los bebés de 0 a 1 año no pagan.</p></details>
+</div></section>
+</main>
+
+<footer><div class="w">
+<div class="grid"><div><a class="logo" href="#top" aria-label="Horizontes Viajes"><svg class="lg"><use href="#lg"/></svg><div><span style="font-family:Fraunces,serif;font-size:1.3rem;font-weight:700">Horizontes</span><small>Viajes</small></div></a><p>Agencia de turismo en Honduras. Viajes a tu medida: playas, montañas, cultura y aventura.</p></div>
+<div><h4>Destinos</h4><a href="#destinos">Roatán</a><a href="#destinos">Copán Ruinas</a><a href="#destinos">Lago de Yojoa</a><a href="#destinos">PANACAM</a></div>
+<div><h4>Contacto</h4><a href="#">+504 0000-0000</a><a href="#">Lun–Sáb, 8:00–18:00</a><a href="#">info@horizontesviajes.com</a></div>
+<div><h4>Síguenos</h4><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TripAdvisor</a></div></div>
+<div class="cp">&copy; Horizontes Viajes. Todos los derechos reservados.</div></div></footer>
+
+<a id="wa" class="fl" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">✆</a>
+<button id="mus" class="fl" type="button" aria-label="Pausar o reproducir música">♪<span>Música</span></button>
+<audio id="bgm" loop preload="auto"><source src="fondito.mp3" type="audio/mpeg"></audio>
+<div id="toast" class="toast" role="status"></div>
+
+<script>
+(function(){
+var WHATSAPP="50400000000",EMAIL="info@horizontesviajes.com",PN=0.5,DG=0.10,GM=6,SEG=320,VOL=0.35;
+var $=function(i){return document.getElementById(i)};
+var money=function(n){return(n<0?'-':'')+'L '+Math.abs(Math.round(n)).toLocaleString('en-US')};
+var num=function(i){return Math.max(0,parseInt($(i).value,10)||0)};
+$('wa').href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent('Hola, quiero información sobre sus paquetes.');
+
+/* ===== Música: suena al entrar, se pausa con el botón y se detiene al salir ===== */
+var bgm=$('bgm'),mb=$('mus'),quiere=true,EV=['pointerdown','pointerup','click','touchend','keydown'];
+bgm.volume=VOL;
+function ico(){mb.classList.toggle('off',bgm.paused);mb.firstChild.nodeValue=bgm.paused?'✕':'♪';mb.querySelector('span').textContent=bgm.paused?'Activar música':'Pausar música'}
+function sonar(){var p=bgm.play();if(p&&p.catch)p.catch(ico)}
+function gesto(){if(quiere&&bgm.paused)sonar()}
+EV.forEach(function(e){document.addEventListener(e,gesto,true)});
+bgm.addEventListener('playing',function(){ico();EV.forEach(function(e){document.removeEventListener(e,gesto,true)})});
+bgm.addEventListener('pause',ico);
+mb.addEventListener('click',function(e){e.stopPropagation();if(bgm.paused){quiere=true;sonar()}else{quiere=false;bgm.pause()}});
+['pointerdown','pointerup','touchend'].forEach(function(e){mb.addEventListener(e,function(x){x.stopPropagation()})});
+document.addEventListener('visibilitychange',function(){if(document.hidden)bgm.pause();else if(quiere)sonar()});
+window.addEventListener('pagehide',function(){bgm.pause();bgm.currentTime=0});
+window.addEventListener('load',sonar);sonar();ico();
+
+/* ===== Datos ===== */
+var D=[
+{k:'roatan',n:'Roatán',img:'roatan.avif',t:'4 días / 3 noches',pk:[12000,4900,9000,13000,17000],noc:3,tr:'Avión ida y vuelta San Pedro Sula–Roatán',m:'Febrero a mayo',l:['Hotel y traslados incluidos','Snorkel en el arrecife','West Bay y West End']},
+{k:'copan',n:'Copán Ruinas',img:'ruinas.avif',t:'3 días / 2 noches',pk:[4800,8400,15500,22500,29000],noc:2,tr:'Bus o shuttle terrestre desde San Pedro Sula',m:'Noviembre a abril',l:['Hotel y desayuno','Tour al Parque Arqueológico','Pueblo colonial y guacamayas']},
+{k:'yojoa',n:'Lago de Yojoa',img:'lagode.jpg',t:'2 días / 1 noche',pk:[2900,4800,8600,12500,16000],noc:1,tr:'Van privada terrestre',m:'Todo el año (más seco: nov–abr)',l:['Cabaña y paseo en bote','Avistamiento de aves','Cascada de Pulhapanzak']},
+{k:'panacam',n:'PANACAM',img:'panacam.jpg',t:'2 días / 1 noche',pk:[3600,6000,10800,15600,20000],noc:1,tr:'Transporte terrestre privado',m:'Noviembre a abril',l:['Cabaña y guía local','Caminata por bosque nublado','Cascadas y fauna']},
+{k:'crucero',n:'Cruceros del Caribe',img:'velero.webp',t:'7 días / 6 noches',pk:[16500,29000,52000,75000,96000],noc:6,tr:'Vuelo al puerto de embarque',m:'Diciembre a abril',l:['Cabina y comidas a bordo','Excursiones en puertos','Vuelo y traslados al puerto']}];
+var sel=$('destino');
+var TN=['Personal','Pareja','Familiar','Grupo','Grupo'],TP=['1 persona','2 personas','4 personas','6 personas','8 personas'],TK=['personal','pareja','familiar','grupo6','grupo8'];
+function packs(d,at){return'<div class="pks">'+d.pk.map(function(v,i){return'<button type="button" class="pkb" '+at+'="'+d.k+'" data-t="'+TK[i]+'"><small>'+TN[i]+'</small><b>'+money(v)+'</b><small>'+TP[i]+'</small></button>'}).join('')+'</div>'}
+D.forEach(function(d){
+d.min=Math.min.apply(null,d.pk);
+var o=document.createElement('option');o.value=d.n+' ('+d.t+')';o.dataset.k=d.k;o.dataset.pk=d.pk.join(',');o.dataset.noches=d.noc;o.dataset.tr=d.tr;
+o.textContent=d.n+' · '+d.t+' · desde '+money(d.min);sel.appendChild(o);
+var c=document.createElement('article');c.className='box dest';
+c.innerHTML='<div class="ph"><img src="'+d.img+'" alt="'+d.n+'" loading="lazy"></div><div class="in"><h3>'+d.n+'</h3><div class="meta">'+d.t+' · Mejor época: '+d.m+'</div><div class="tr">Transporte: '+d.tr+'</div><ul>'+d.l.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ul>'+packs(d,'data-k')+'<div class="pie"><div><small>Desde</small><b>'+money(d.min)+'</b></div><button class="btn" data-k="'+d.k+'">Cotizar</button></div></div>';
+$('dest').appendChild(c)});
+function elegir(k,t){var o=sel.querySelector('option[data-k="'+k+'"]');sel.value=o.value;if(t){$('tipo').value=t;defTipo()}manual=false;calc()}
+$('dest').addEventListener('click',function(e){var b=e.target.closest('[data-k]');if(!b)return;
+elegir(b.dataset.k,b.dataset.t);$('cotiza').scrollIntoView()});
+
+/* ===== Cotizador ===== */
+var hoy=new Date();hoy.setMinutes(hoy.getMinutes()-hoy.getTimezoneOffset());
+$('fecha').min=$('regreso').min=hoy.toISOString().slice(0,10);
+var manual=false,ult=null;
+function pad(n){return(n<10?'0':'')+n}
+function add(s,n){var d=new Date(s+'T00:00:00');d.setDate(d.getDate()+n);return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+function fmt(s){return new Date(s+'T00:00:00').toLocaleDateString('es-HN',{day:'numeric',month:'long',year:'numeric'})}
+function noches(a,b){return Math.round((new Date(b+'T00:00:00')-new Date(a+'T00:00:00'))/864e5)}
+var TT={personal:{n:'Personal',i:0,a:1,k:0,txt:'1 persona'},pareja:{n:'Pareja',i:1,a:2,k:0,txt:'2 personas'},familiar:{n:'Familiar',i:2,a:2,k:2,txt:'4 personas',tot:4},grupo6:{n:'Grupo',i:3,a:4,k:2,txt:'6 personas',tot:6},grupo8:{n:'Grupo',i:4,a:4,k:4,txt:'8 personas',tot:8}};
+function defTipo(){var t=TT[$('tipo').value];$('adultos').value=t.a;$('ninos').value=t.k;$('bebes').value=0}
+function calc(){
+var o=sel.selectedOptions[0],pk=(o.dataset.pk||'').split(','),t=TT[$('tipo').value],p=parseFloat(pk[t.i])||0,paq=parseInt(o.dataset.noches,10)||0;
+$('regreso').min=$('fecha').value||$('regreso').min;
+if(!manual&&p&&$('fecha').value)$('regreso').value=add($('fecha').value,paq);
+var s=$('fecha').value,r=$('regreso').value,el=$('estancia');
+if(s&&r){var n0=noches(s,r);el.textContent=n0<0?'La fecha de regreso es anterior a la salida.':'Del '+fmt(s)+' al '+fmt(r)+' ('+(n0+1)+' días / '+n0+' noches)'+(p&&paq&&n0!==paq?'. El paquete incluye '+paq+' noche(s); ajustaremos el precio al confirmar.':'')}else el.textContent='';
+var a=num('adultos'),n=num('ninos'),b=num('bebes'),pag=a+n,f=[];
+if(p){f.push(['Paquete '+t.n+' ('+t.txt+')',p]);if(o.dataset.tr)f.push([o.dataset.tr,0,'Incluido']);if(b)f.push([b+' bebé(s)',0,'Gratis'])}
+var sg=(p&&$('seguro').checked)?pag*SEG:0;if(sg)f.push(['Seguro ('+pag+' × '+money(SEG)+')',sg]);
+var tot=p+sg;
+$('lineas').innerHTML=p?f.map(function(x){return'<div class="r"><span>'+x[0]+'</span><span>'+(x[2]||money(x[1]))+'</span></div>'}).join(''):'<p style="font-size:.9rem;color:#b9d2cd">Elige un destino para ver el precio.</p>';
+$('total').textContent=p?money(tot):'—';
+return{destino:o.value,a:a,n:n,b:b,total:tot,tipo:t.n+' ('+t.txt+')',tr:o.dataset.tr||''}}
+function msg(d){var s=$('fecha').value,r=$('regreso').value;
+return'Hola, quiero cotizar un viaje con Horizontes Viajes.\n\nNombre: '+$('name').value.trim()+'\nTeléfono: '+$('tel').value.trim()+'\nCorreo: '+($('email').value.trim()||'-')+'\nDestino: '+d.destino+'\nPaquete: '+d.tipo+'\nTransporte: '+d.tr+'\nSalida: '+fmt(s)+'\nRegreso: '+fmt(r)+'\nDuración: '+(noches(s,r)+1)+' días / '+noches(s,r)+' noches\nViajeros: '+d.a+' adulto(s), '+d.n+' niño(s), '+d.b+' bebé(s)\nSeguro: '+($('seguro').checked?'Sí':'No')+'\nTotal estimado: '+money(d.total)+($('message').value.trim()?'\nComentarios: '+$('message').value.trim():'')}
+function toast(m,ok){var t=$('toast');t.textContent=m;t.className='toast show '+(ok?'ok':'err');clearTimeout(t._t);t._t=setTimeout(function(){t.className='toast'},6000)}
+function val(d){var e='',f='';
+if(!$('name').value.trim()){e='Escribe tu nombre.';f='name'}
+else if(!$('tel').value.trim()){e='Escribe tu teléfono o WhatsApp.';f='tel'}
+else if($('email').value.trim()&&!/^\S+@\S+\.\S+$/.test($('email').value.trim())){e='El correo no es válido.';f='email'}
+else if(!d.destino){e='Selecciona un destino.';f='destino'}
+else if(!$('fecha').value){e='Elige la fecha de salida.';f='fecha'}
+else if(!$('regreso').value||$('regreso').value<$('fecha').value){e='Revisa la fecha de regreso.';f='regreso'}
+else if(d.a<1){e='Debe viajar al menos un adulto.';f='adultos'}
+else if($('tipo').value==='personal'&&(d.a!==1||d.n!==0)){e='El paquete Personal es para 1 adulto.';f='adultos'}
+else if($('tipo').value==='pareja'&&(d.a!==2||d.n!==0)){e='El paquete Pareja es para 2 adultos.';f='adultos'}
+else if(TT[$('tipo').value].tot&&d.a+d.n!==TT[$('tipo').value].tot){e='El paquete '+TT[$('tipo').value].n+' ('+TT[$('tipo').value].txt+') requiere exactamente '+TT[$('tipo').value].tot+' viajeros entre adultos y niños.';f='adultos'}
+$('aviso').textContent=e;
+Array.prototype.forEach.call(document.querySelectorAll('.bad'),function(x){x.classList.remove('bad')});
+if(f){$(f).classList.add('bad');$(f).scrollIntoView({block:'center'});$(f).focus({preventScroll:true});toast(e,false)}
+return!e}
+$('regreso').addEventListener('input',function(){manual=!!$('regreso').value});
+$('tipo').addEventListener('change',function(){defTipo();calc()});
+['destino','fecha','regreso','adultos','ninos','bebes','seguro'].forEach(function(i){$(i).addEventListener('input',calc);$(i).addEventListener('change',calc)});
+$('cotizador').addEventListener('submit',function(e){e.preventDefault();var d=calc();if(!val(d))return;
+window.open('https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(msg(d)),'_blank');toast('¡Solicitud lista! Presiona "Enviar" en WhatsApp para completarla.',true)});
+$('btn-mail').addEventListener('click',function(){var d=calc();if(!val(d))return;
+var b=$('btn-mail'),tx=b.textContent;b.disabled=true;b.textContent='Enviando...';
+var dt={_subject:'Cotización: '+d.destino,_captcha:'false',_template:'table',Nombre:$('name').value.trim(),Telefono:$('tel').value.trim(),Destino:d.destino,Paquete:d.tipo,Transporte:d.tr,Salida:fmt($('fecha').value),Regreso:fmt($('regreso').value),Viajeros:d.a+' adulto(s), '+d.n+' niño(s), '+d.b+' bebé(s)',Total_estimado:money(d.total),Comentarios:$('message').value.trim()||'-'};
+if(/^\S+@\S+\.\S+$/.test($('email').value.trim()))dt.email=$('email').value.trim();
+fetch('https://formsubmit.co/ajax/'+EMAIL,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(dt)})
+.then(function(r){return r.json()}).then(function(j){if(j.success===true||j.success==='true')toast('¡Correo enviado! Te responderemos pronto.',true);else throw 0})
+.catch(function(){toast('No se pudo enviar automáticamente. Se abrió tu app de correo.',false);location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Cotización: '+d.destino)+'&body='+encodeURIComponent(msg(d))})
+.then(function(){b.disabled=false;b.textContent=tx})});
+/* ===== Movimiento: títulos y secciones ===== */
+var rot=$('rot'),fr=['a tu medida','en familia','en pareja','con aventura','sin preocupaciones'],fi=0;
+setInterval(function(){rot.classList.add('out');setTimeout(function(){fi=(fi+1)%fr.length;rot.textContent=fr[fi];rot.classList.remove('out')},420)},3000);
+var rv=document.querySelectorAll('h2,.sub,.box,.paso,details');
+rv.forEach(function(el){el.classList.add('rv');var i=Array.prototype.indexOf.call(el.parentNode.children,el);el.style.transitionDelay=Math.min(i,5)*80+'ms'});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});rv.forEach(function(el){io.observe(el)})}
+else rv.forEach(function(el){el.classList.add('in')});
+
+/* ===== Ventana de información de cada destino ===== */
+var INFO={
+roatan:{d:'La isla más famosa de las Islas de la Bahía, con playas de arena blanca y agua cristalina junto al Arrecife Mesoamericano, el segundo más grande del mundo.',
+a:[['Snorkel y buceo','Explora el arrecife de coral y sus peces tropicales.'],['Playa en West Bay','Una de las playas más bonitas del Caribe, ideal para nadar y descansar.'],['West End','Restaurantes, tiendas y ambiente de pueblo isleño al atardecer.'],['Tirolesa y naturaleza','Canopy y senderos entre la selva, con iguanas y aves.'],['Kayak y paddle board','Recorre la costa y los manglares con calma.'],['Cultura garífuna','Conoce la comida y la música de Punta Gorda.']],
+tip:'Lleva protector solar biodegradable para cuidar el arrecife y reserva los tours de buceo con anticipación.'},
+copan:{d:'Una de las ciudades mayas más importantes de América, Patrimonio de la Humanidad, junto a un pueblo colonial lleno de encanto.',
+a:[['Parque Arqueológico','Gran Plaza, Acrópolis y la Escalinata de los Jeroglíficos.'],['Museo de Escultura Maya','Esculturas originales y una réplica del templo Rosalila.'],['Macaw Mountain','Santuario de guacamayas y otras aves tropicales.'],['Aguas termales','Relájate en pozas naturales rodeadas de bosque.'],['Tour de café','Visita una finca y conoce el proceso del grano.'],['Pueblo colonial','Calles empedradas, artesanías y gastronomía local.']],
+tip:'Visita las ruinas temprano para evitar el calor y contratar un guía local te ayuda a entender los glifos.'},
+yojoa:{d:'El lago más grande de Honduras, rodeado de montañas, con ambiente tranquilo, naturaleza y buena comida.',
+a:[['Paseo en bote','Recorre el lago y sus islotes al amanecer o al atardecer.'],['Avistamiento de aves','Más de 400 especies registradas en la zona.'],['Cascada de Pulhapanzak','Una caída de unos 43 metros con senderos y miradores.'],['Cuevas de Taulabé','Formaciones de roca y un recorrido subterráneo.'],['Pesca y gastronomía','Prueba el pescado fresco del lago en restaurantes locales.'],['Parque Los Naranjos','Sitio arqueológico y senderos en medio de la naturaleza.']],
+tip:'Lleva binoculares y ropa cómoda; las mañanas son lo mejor para ver aves.'},
+panacam:{d:'Parque Nacional Cerro Azul Meámbar: bosque nublado, ríos y cascadas a pocos minutos del Lago de Yojoa.',
+a:[['Caminatas guiadas','Senderos entre bosque nublado con guía local.'],['Cascadas y pozas','Refréscate en el agua cristalina de la montaña.'],['Aves y fauna','Observa especies propias del bosque de altura.'],['Fotografía','Neblina, vegetación y paisajes de montaña.'],['Noche en cabaña','Aire fresco, fogata y cielos estrellados.'],['Comunidad local','Conoce el trabajo de las familias que cuidan el parque.']],
+tip:'Lleva abrigo ligero, calzado antideslizante y un impermeable; el clima de montaña cambia rápido.'},
+crucero:{d:'Siete días navegando por el Caribe con cabina, comidas a bordo y paradas en distintos puertos.',
+a:[['Vida a bordo','Piscinas, shows, música en vivo y áreas de descanso.'],['Gastronomía','Restaurantes y buffets incluidos durante el viaje.'],['Excursiones en puerto','Playas, snorkel, ruinas y pueblos locales, según el itinerario.'],['Spa y bienestar','Masajes y gimnasio (algunos servicios con costo extra).'],['Diversión para niños','Actividades y clubes para los más pequeños.'],['Compras libres de impuesto','Souvenirs y artesanías en cada puerto.']],
+tip:'Revisa que tu pasaporte esté vigente. Te ayudamos con visas y documentos si el itinerario los requiere.'}};
+var dlg=document.createElement('dialog');dlg.className='mod';dlg.setAttribute('aria-label','Información del destino');document.body.appendChild(dlg);
+function abrir(i){var d=D[i],f=INFO[d.k];
+dlg.innerHTML='<div class="top"><img src="'+d.img+'" alt="'+d.n+'"><button class="x" type="button" aria-label="Cerrar">✕</button></div><div class="bd"><h2>'+d.n+'</h2><div class="meta">'+d.t+' · Mejor época: '+d.m+'</div><p>'+f.d+'</p><h3>Qué puedes hacer</h3><div class="acts">'+f.a.map(function(x){return'<div class="act"><b>'+x[0]+'</b><span>'+x[1]+'</span></div>'}).join('')+'</div><h3>Incluye el paquete</h3><ul class="inc">'+d.l.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ul><div class="tip"><b>Consejo:</b> '+f.tip+'</div><h3>Paquetes y precios</h3><div class="tr">Transporte: '+d.tr+'</div>'+packs(d,'data-c')+'<div class="pie"><div><small>Desde</small><b>'+money(d.min)+'</b></div><button class="btn" type="button" data-c="'+d.k+'">Cotizar este destino</button></div><p class="nota">Las actividades que no están en el paquete se cotizan aparte y dependen del clima y la disponibilidad.</p></div>';
+dlg.showModal();dlg.scrollTop=0;document.body.style.overflow='hidden'}
+dlg.addEventListener('click',function(e){
+if(e.target===dlg||e.target.closest('.x')){dlg.close();return}
+var c=e.target.closest('[data-c]');if(!c)return;
+elegir(c.dataset.c,c.dataset.t);dlg.close();$('cotiza').scrollIntoView()});
+dlg.addEventListener('close',function(){document.body.style.overflow=''});
+document.querySelectorAll('.dest').forEach(function(c,i){
+c.tabIndex=0;
+var v=document.createElement('div');v.className='ver';v.textContent='Ver qué hacer →';c.querySelector('.pie').before(v);
+c.addEventListener('click',function(e){if(!e.target.closest('[data-k]'))abrir(i)});
+c.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target===c){e.preventDefault();abrir(i)}})});
+
+calc();
+})();
+</script>
+</body>
+</html>
